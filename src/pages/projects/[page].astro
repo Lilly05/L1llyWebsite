@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Card from '../../components/Card.astro';
+
+import ProjectsJson from '../../../projects.json';
+
+interface Thing {
+    title: string
+    body: string
+    href: string
+}
+
+export async function getStaticPaths({ paginate }) {
+  // Load your data with fetch(), Astro.glob(), etc.
+  const things: Thing[] = ProjectsJson;
+
+  // Return a paginated collection of paths for all posts
+  return paginate(things, { pageSize: 5 });
+}
+
+// If set up correctly, The page prop now has everything that
+// you need to render a single page (see next section).
+const { page } = Astro.props;
+---
+
+<Layout title="Projects">
+    <main>
+        <h1>Projects</h1>
+        <ul role="list" class="link-card-grid">
+        {page.data.map(pagedata => (
+            <Card href={pagedata.href} title={pagedata.title} body={pagedata.body} />
+        )
+        )}
+        </ul>
+        <div>
+            Page {page.currentPage} / {page.lastPage}
+        </div>
+        <div>
+            {
+                page.url.prev != undefined ? <a href={page.url.prev}>Previous</a> : ''
+            }
+            {
+                page.url.next != undefined ? <a href={page.url.next}>Next</a> : ''
+            }
+    </main>
+</Layout>
