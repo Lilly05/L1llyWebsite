@@ -3,65 +3,34 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="L1lly">
 	<main>
-		<h1>Welcome to <span class="text-gradient">L1lly</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
+		<h1>L1lly</h1>
+		<div class="link-card-grid">
 			<Card
 				href="/projects/1"
-				title="My Projects"
-				body="An example by enea"
+				title="my projects"
+				body="have a look at my programming projects"
+				target="_self"
 			/>
-
-		</ul>
+			<Card
+			    href="https://enea.tech"
+			    title="my love",
+                body="Website of my favorite person that I love unconditionally",
+			/>
+		</div>
 	</main>
 </Layout>
 
 <style>
 	main {
 		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+		padding: 0 1.5rem;
+
 	}
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+		margin-bottom: 5rem;
 	}
 </style>

@@ -23,24 +23,32 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<Layout title="Projects">
+<Layout title="my projects">
     <main>
-        <h1>Projects</h1>
-        <ul role="list" class="link-card-grid">
+        <h1 class="title">my projects</h1>
+
+        <a class="link-as-button back-button" href="/">back to the homepage</a>
+
+        <div class="link-card-grid">
         {page.data.map(pagedata => (
             <Card href={pagedata.href} title={pagedata.title} body={pagedata.body} />
         )
         )}
-        </ul>
-        <div>
-            Page {page.currentPage} / {page.lastPage}
         </div>
-        <div>
+        <p class="pages">
+            Page {page.currentPage} / {page.lastPage}
+        </p>
+        <div class="buttons">
+        <div class="button">
             {
-                page.url.prev != undefined ? <a href={page.url.prev}>Previous</a> : ''
+                page.url.prev != undefined ? <a class="link-as-button" href={page.url.prev}>Previous</a> : ''
             }
+        </div>
+        <div class="button">
             {
-                page.url.next != undefined ? <a href={page.url.next}>Next</a> : ''
+                page.url.next != undefined ? <a class="link-as-button" href={page.url.next}>Next</a> : ''
             }
+        </div>
+        </div>
     </main>
 </Layout>

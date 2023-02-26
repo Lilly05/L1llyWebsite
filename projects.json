@@ -1,62 +1,52 @@
 [
   {
-    "title": "Enea Website",
-    "body": "Best boyfriend ever site",
-    "href": "https://enea.tech"
+    "title": "Flying Guinea Pigs",
+    "body": "A game developed with p5.js",
+    "href": "https://flyingguineapigs.l1lly.li"
   },
   {
-    "title": "This site",
-    "body": "Best boyfriend ever site",
-    "href": "https://l1lly.li"
+    "title": "Universe",
+    "body": "Universe is a purple, pink and blue JetBrains theme to make your programming experience more enjoyable ^^",
+    "href": "https://plugins.jetbrains.com/plugin/19536-universe"
   },
   {
-    "title": "Enea Website",
-    "body": "Best boyfriend ever site",
-    "href": "https://enea.tech"
+    "title": "Connect Four",
+    "body": "Connect Four is a fun game programmed with JavaFX",
+    "href": "https://github.com/Lilly05/ConnectFour-with-UI"
   },
   {
-    "title": "This site",
-    "body": "Best boyfriend ever site",
-    "href": "https://l1lly.li"
+    "title": "Guesser",
+    "body": "I used multiple different API's to create this project :)",
+    "href": "https://guesser.l1lly.li"
   },
   {
-    "title": "Enea Website",
-    "body": "Best boyfriend ever site",
-    "href": "https://enea.tech"
+    "title": "ToDoList",
+    "body": "This ToDoList was programmed by my work colleague and me to practise our skills ^^",
+    "href": "https://todo.l1lly.li"
   },
   {
-    "title": "This site",
-    "body": "Best boyfriend ever site",
-    "href": "https://l1lly.li"
+    "title": "Pick a match",
+    "body": "an application to decide who has to do something lol I hope you understand what I mean",
+    "href": "https://pickamatch.l1lly.li"
   },
   {
-    "title": "Enea Website",
-    "body": "Best boyfriend ever site",
-    "href": "https://enea.tech"
+    "title": "Converter",
+    "body": "I wrote all the calculations to convert numbers to other numbersystems on my own without using Java's predefined methods.",
+    "href": "https://github.com/Lilly05/Converter"
   },
   {
-    "title": "This site",
-    "body": "Best boyfriend ever site",
-    "href": "https://l1lly.li"
+    "title": "Miso Hungry",
+    "body": "Bestes Ramen Restaurant von Applis (und Platti) lol sorry not sorry",
+    "href": "https://misohungry.l1lly.li"
   },
   {
-    "title": "Enea Website",
-    "body": "Best boyfriend ever site",
-    "href": "https://enea.tech"
+    "title": "Angular Calculator",
+    "body": "A calculator developed with Angular",
+    "href": "https://calculator.l1lly.li"
   },
   {
-    "title": "This site",
-    "body": "Best boyfriend ever site",
-    "href": "https://l1lly.li"
-  },
-  {
-    "title": "Enea Website",
-    "body": "Best boyfriend ever site",
-    "href": "https://enea.tech"
-  },
-  {
-    "title": "This site",
-    "body": "Best boyfriend ever site",
-    "href": "https://l1lly.li"
+    "title": "Pride",
+    "body": "First HTML and CSS Projekt from a Appli and Platti",
+    "href": "https://pride.l1lly.li"
   }
 ]

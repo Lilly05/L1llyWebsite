@@ -11,7 +11,7 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
@@ -20,16 +20,73 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,400;8..144,800&family=Roboto+Mono:wght@300;400;600;700&display=swap');
+
 	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--accent: 171, 177, 207;
+		--accent-darker: 93, 100, 133;
+		--accent-gradient: linear-gradient(45deg, #c5b9cd, #abb1cf 50%, #dec2cb 100%);
+		--light-pink: #f7cac9;
+        --purple-pink: #dec2cb;
+        --light-purple: #c5b9cd;
+        --purple-blue: #abb1cf;
+        --blue: #92a8d1;
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		font-family: 'Roboto Mono', monospace;
+		background-color: var(--light-pink);
+		text-align: center;
 	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+
+	ul {
+    	    padding-inline-start: 0;
+    }
+
+    body{
+        margin-bottom: 10rem;
+    }
+
+    .link-card-grid {
+        display: flex;
+        gap: 3rem;
+        padding: 0;
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link-as-button{
+        text-decoration: none;
+        color: black;
+        padding: 1em 2em;
+        background-color: var(--purple-blue);
+        border-radius: 30px;
+        border: 2px solid var(--blue);
+        box-shadow: 2.8px 2.8px 2.2px rgb(0 0 0 / 2%), 6.7px 6.7px 5.3px rgb(0 0 0 / 3%), 12.5px 12.5px 10px rgb(0 0 0 / 4%), 22.3px 22.3px 17.9px rgb(0 0 0 / 4%), 41.8px 41.8px 33.4px rgb(0 0 0 / 5%), 100px 100px 80px rgb(0 0 0 / 7%);
+        width: 100%;
+    }
+
+    .buttons{
+        display: flex;
+        gap: 1rem;
+        margin-top: 2em;
+        justify-content: space-around;
+    }
+
+    .pages{
+        font-weight: bold;
+    }
+
+    .title{
+        margin-bottom: 2rem;
+    }
+
+    .link-as-button:is(:hover, :focus-within){
+        box-shadow:
+          2.9px 1.4px 7.7px rgba(0, 0, 0, 0.044),
+          8.1px 3.9px 21.4px rgba(0, 0, 0, 0.085),
+          19.6px 9.3px 51.6px rgba(0, 0, 0, 0.12),
+          65px 31px 171px rgba(0, 0, 0, 0.14)
+        ;
+    }
 </style>
